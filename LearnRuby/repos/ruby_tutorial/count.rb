@@ -23,3 +23,5 @@ words.each do |word|
     uniques[word]  = 1
   end
 end
+
+puts unique
