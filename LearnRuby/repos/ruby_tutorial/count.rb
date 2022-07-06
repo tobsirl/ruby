@@ -26,6 +26,6 @@ end
 
 puts uniques
 
-uniques.sort
+uniques.sort_by { |_key, value| value}
 
 puts uniques
