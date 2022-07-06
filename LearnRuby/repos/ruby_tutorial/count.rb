@@ -15,3 +15,11 @@ I never writ, nor no man ever loved."
 
 uniques = {}
 words = sonnet.scan(/\w+/)
+
+words.each do |word|
+  if uniques[word]
+    uniques[word] += 1
+  else
+    uniques[word]  = 1
+  end
+end
