@@ -24,4 +24,8 @@ words.each do |word|
   end
 end
 
-puts unique
+puts uniques
+
+uniques.sort
+
+puts uniques
