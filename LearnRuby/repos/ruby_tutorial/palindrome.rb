@@ -1,4 +1,5 @@
 # Returns true for a palindrome, false otherwise.
 def palindrome?(string)
-  string.downcase == string.downcase.reverse
+  processed_content = string.downcase
+  processed_content == processed_content.reverse
 end
