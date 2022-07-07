@@ -1,5 +1,5 @@
 require 'sinatra'
-require './day'
+require './greeting'
 
 get '/' do
   greeting(Time.now)
