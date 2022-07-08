@@ -9,3 +9,8 @@ def imperative_urls(states)
   urls
 end
 p imperative_urls(states)
+
+names = ["John", "Paul", "George", "Ringo"]
+
+["ALICE", "BOB", "CHARLIE"].map { |name| name.downcase }
+names.map { |name| name.downcase }
