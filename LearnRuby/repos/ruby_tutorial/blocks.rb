@@ -18,3 +18,8 @@ end
 sandwich do
   puts "mutton, lettuce, and tomato"
 end
+
+def tag(tagname, text)
+  html = "<#{tagname}>#{text}</#{tagname}>"
+  yield html
+end
