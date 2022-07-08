@@ -14,3 +14,7 @@ def sandwich
   yield
   puts "bottom bread"
 end
+
+sandwich do
+  puts "mutton, lettuce, and tomato"
+end
