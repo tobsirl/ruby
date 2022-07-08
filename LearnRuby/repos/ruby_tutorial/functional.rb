@@ -18,3 +18,9 @@ p print_name
 
 print_name_symbol = names.map(&:downcase)
 p print_name_symbol
+
+# urls: Functional version
+def functional_urls(states)
+  states.map { |state| state.downcase.split.join('-') }
+end
+puts functional_urls(states).inspect
