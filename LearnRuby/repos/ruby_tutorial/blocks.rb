@@ -4,3 +4,7 @@
 (1..5).each do |i|
   puts 2**i
 end
+
+['ant', 'bat', 'cat', 42].each do |element|
+  puts element
+end
