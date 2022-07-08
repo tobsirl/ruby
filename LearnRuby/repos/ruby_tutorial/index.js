@@ -5,3 +5,5 @@ function calculateDayBetweenDates(startDate, endDate) {
   var days = diff / (1000 * 60 * 60 * 24);
   return days;
 }
+
+['ant', 'bat', 'cat', 42].forEach((element) => console.log(element));
