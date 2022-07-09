@@ -31,3 +31,13 @@ puts phrase.palindrome?
 
 phrase_whisper = "whisper so the bad man doesn't hear us"
 puts phrase.louder
+
+# Defines a translated Phrase.
+class TranslatedPhrase < Phrase
+  attr_accessor :translation
+
+  def initialize(content, translation)
+    super(content)
+    @translation = translation
+  end
+end
