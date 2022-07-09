@@ -11,6 +11,11 @@ class Phrase
     processed_content = self.content.downcase
     processed_content == processed_content.reverse
   end
+
+  # Makes the phrase LOUDER.
+  def louder
+    processed_content = self.content.uppercase
+  end
 end
 
 phrase = Phrase.new("Madam, I'm Adam.")
@@ -24,3 +29,6 @@ puts phrase.palindrome?
 
 phrase.content = "rotator"
 puts phrase.palindrome?
+
+phrase.content = "whisper so the bad man doesn't hear us"
+puts phrase.louder
