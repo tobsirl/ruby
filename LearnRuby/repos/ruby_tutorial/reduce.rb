@@ -9,3 +9,10 @@ def imperative_sum(numbers)
   total
 end
 puts imperative_sum(numbers)
+
+result = numbers.reduce(0) do |total, n|
+  total += n
+  total
+end
+
+puts result
