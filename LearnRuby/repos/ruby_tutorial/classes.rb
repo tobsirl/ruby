@@ -40,4 +40,12 @@ class TranslatedPhrase < Phrase
     super(content)
     @translation = translation
   end
+
+  # Processes the translation for palindrome testing.
+  def processed_content
+    self.translation.downcase
+  end
 end
+
+frase = TranslatedPhrase.new("recognize", "reconocer")
+puts frase.palindrome?
