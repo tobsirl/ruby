@@ -1,5 +1,10 @@
 # Defines a Phrase class.
 class Phrase < String
+  # Returns content for palindrome testing.
+  def processed_content
+    self.downcase
+  end
+
   # Returns true for a palindrome, false otherwise.
   def palindrome?
     processed_content = downcase
