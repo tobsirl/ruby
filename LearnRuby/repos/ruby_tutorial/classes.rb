@@ -1,5 +1,7 @@
 # Defines a Phrase class.
 class Phrase
+  attr_accessor :content
+  
   def initialize(content)
     @content = content
   end
