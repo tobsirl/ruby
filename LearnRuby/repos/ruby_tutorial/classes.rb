@@ -1,11 +1,5 @@
 # Defines a Phrase class.
 class Phrase < String
-  attr_accessor :content
-
-  def initialize(content)
-    @content = content
-  end
-
   # Returns true for a palindrome, false otherwise.
   def palindrome?
     processed_content = self.downcase
@@ -14,21 +8,21 @@ class Phrase < String
 
   # Makes the phrase LOUDER.
   def louder
-    processed_content = self.content.upcase
+    processed_content = self.upcase
   end
 end
 
 phrase = Phrase.new("Madam, I'm Adam.")
-puts phrase.content 
+puts phrase 
 
-phrase.content = "Able was I, ere I saw Elba."
-puts phrase.content
+phrase = "Able was I, ere I saw Elba."
+puts phrase
 
 phrase = Phrase.new("Racecar")
 puts phrase.palindrome?
 
-phrase.content = "rotator"
+phrase_rotator = "rotator"
 puts phrase.palindrome?
 
-phrase.content = "whisper so the bad man doesn't hear us"
+phrase_whisper = "whisper so the bad man doesn't hear us"
 puts phrase.louder
