@@ -12,7 +12,6 @@ puts imperative_sum(numbers)
 
 result = numbers.reduce(0) do |accum, curr|
   accum += curr
-  accum
 end
 
 puts result
