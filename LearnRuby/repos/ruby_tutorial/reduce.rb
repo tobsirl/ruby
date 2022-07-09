@@ -22,6 +22,7 @@ end
 
 puts result
 
+states = ["Kansas", "Nebraska", "North Dakota", "South Dakota"]
 
 # lengths: Imperative version
 def imperative_lengths(states)
@@ -32,3 +33,12 @@ def imperative_lengths(states)
   lengths
 end
 puts imperative_lengths(states)
+
+# lengths: Functional version
+def functional_lengths(states)
+  states.reduce({}) do |lengths, state|
+    lengths[state] = state.length
+    lengths
+  end
+end
+puts functional_lengths(states)
