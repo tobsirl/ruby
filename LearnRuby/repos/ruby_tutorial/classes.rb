@@ -19,5 +19,8 @@ puts phrase.content
 phrase.content = "Able was I, ere I saw Elba."
 puts phrase.content
 
-phrase.content = "Madam, I'm Adam."
-phrase.palindrome?
+phrase = Phrase.new("Racecar")
+puts phrase.palindrome?
+
+phrase.content = "rotator"
+puts phrase.palindrome?
