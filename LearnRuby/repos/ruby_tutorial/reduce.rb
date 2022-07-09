@@ -10,6 +10,12 @@ def imperative_sum(numbers)
 end
 puts imperative_sum(numbers)
 
+# sum: Functional solution
+def functional_sum(numbers)
+  numbers.reduce { |total, n| total + n }
+end
+puts functional_sum(numbers)
+
 result = numbers.reduce(0) do |accum, curr|
   accum += curr
 end
