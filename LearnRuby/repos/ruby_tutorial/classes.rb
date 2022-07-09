@@ -14,7 +14,7 @@ class Phrase
 
   # Makes the phrase LOUDER.
   def louder
-    processed_content = self.content.uppercase
+    processed_content = self.content.upcase
   end
 end
 
