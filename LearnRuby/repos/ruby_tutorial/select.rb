@@ -23,7 +23,7 @@ end
 puts functional_singles(states).inspect
 
 def check_for_dakota(states)
-  states.any? { |state| state.include?("Dakota") }
+  states.select { |state| state.include?("Dakota") }
 end
 
 puts check_for_dakota(states).inspect
