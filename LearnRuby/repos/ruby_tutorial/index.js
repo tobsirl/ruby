@@ -7,3 +7,13 @@ function calculateDayBetweenDates(startDate, endDate) {
 }
 
 ['ant', 'bat', 'cat', 42].forEach((element) => console.log(element));
+
+// sort and array of strings
+const array = ['a', 'c', 'b'];
+
+function sortStrings(array) {
+  return array.sort();
+}
+
+const result = sortStrings(array);
+console.log(result);
