@@ -70,3 +70,18 @@ puts "napolenosLament -> #{napoleonsLament.palindrome?}"
 puts "foobar".palindrome?
 puts "Racecar".palindrome?
 puts "Able was I ere I saw Elba".palindrome?
+
+module Palindrome
+
+  # Returns true for a palindrome, false otherwise.
+  def palindrome?
+    processed_content == processed_content.reverse
+  end
+
+  private
+
+    # Returns content for palindrome testing.
+    def processed_content
+      self.to_s.downcase
+    end
+end
