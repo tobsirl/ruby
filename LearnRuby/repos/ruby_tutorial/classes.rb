@@ -85,3 +85,11 @@ module Palindrome
       self.to_s.downcase
     end
 end
+
+class String
+  include Palindrome
+end
+
+class Integer
+  include Palindrome
+end
