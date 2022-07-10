@@ -62,3 +62,6 @@ class String
     processed_content == processed_content.reverse
   end
 end
+
+napoleonsLament = String.new("Able was I ere I saw Elba")
+puts "napolenosLament -> #{napoleonsLament.palindrome?}"
