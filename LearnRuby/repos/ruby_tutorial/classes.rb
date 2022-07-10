@@ -93,3 +93,5 @@ end
 class Integer
   include Palindrome
 end
+puts "-----------Module------------"
+puts 12321.palindrome?
