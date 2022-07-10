@@ -64,4 +64,9 @@ class String
 end
 
 napoleonsLament = String.new("Able was I ere I saw Elba")
+puts "-------------------------"
 puts "napolenosLament -> #{napoleonsLament.palindrome?}"
+
+puts "foobar".palindrome?
+puts "Racecar".palindrome?
+puts "Able was I ere I saw Elba".palindrome?
