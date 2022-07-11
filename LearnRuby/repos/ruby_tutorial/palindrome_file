@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 text = File.read("phrases.txt")
 
-text.split("\n").each do |line|
+lines = File.readlines("phrases.txt")
+lines.each do |line|
   if line
     puts "palindrome detected: #{line}"
   end
