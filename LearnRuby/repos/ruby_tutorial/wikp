@@ -9,3 +9,4 @@ require 'nokogiri'
 url = ARGV[0]
 
 doc = Nokogiri::HTML(URI.open(url).read)
+doc.css('.reference').each { |reference| reference.remove }
