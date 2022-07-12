@@ -8,4 +8,4 @@ require 'nokogiri'
 
 url = ARGV[0]
 
-puts url
+doc = Nokogiri::HTML(URI.open(url).read)
