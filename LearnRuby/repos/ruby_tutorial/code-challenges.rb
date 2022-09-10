@@ -25,3 +25,7 @@ end
 def problem x
   x*50+6 rescue 'Error'
 end
+
+def problem x
+  x.is_a?(String) ? "Error" : x * 50 + 6
+end
