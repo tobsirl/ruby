@@ -21,3 +21,7 @@ def problem x
     (x * 50) + 6
   end
 end
+
+def problem x
+  x*50+6 rescue 'Error'
+end
