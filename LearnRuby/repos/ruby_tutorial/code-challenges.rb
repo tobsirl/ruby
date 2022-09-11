@@ -35,3 +35,6 @@ end
 # You must check that all values in the array are below or equal to the limit value. 
 # If they are, return true. Else, return false.
 # You can assume all values in the array are numbers.
+def small_enough(a, limit)
+  a.all? { |x| x <= limit }
+end
