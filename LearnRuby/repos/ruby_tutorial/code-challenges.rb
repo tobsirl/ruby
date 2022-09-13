@@ -38,3 +38,9 @@ end
 def small_enough(a, limit)
   a.all? { |x| x <= limit }
 end
+
+# Beginner - Reduce but Grow
+# Given a non-empty array of integers, return the result of multiplying the values together in order.
+def grow(x)
+  x.reduce { |accum, curr| accum * curr }
+end
