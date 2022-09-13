@@ -44,3 +44,7 @@ end
 def grow(x)
   x.reduce { |accum, curr| accum * curr }
 end
+
+def grow(x)
+  x.inject(:*)
+end
