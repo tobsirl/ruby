@@ -58,3 +58,9 @@ end
 def min_value(digits)
   digits.uniq.sort.join.to_i
 end
+
+# Task
+# Sort array by string length 7kyu
+# Write a function that takes an array of strings as an argument and returns 
+# a sorted array containing the same strings, ordered from shortest to longest.
+
