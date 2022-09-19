@@ -66,3 +66,23 @@ end
 def sort_by_length(arr)
   arr.sort_by(&:length)
 end
+
+# Grasshopper - Grade book 8kyu
+# Complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade.
+def get_grade(s1, s2, s3)
+   score = (s1 + s2 + s3) / 3
+  
+   case score
+   when 90..100
+    "A"
+   when 80..89
+    "B"
+   when 70..79
+    "C"
+   when 60..69
+    "D"
+   when 0..59
+    "F"
+   end
+end
+
