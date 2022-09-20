@@ -99,3 +99,10 @@ end
 # Are You Playing Banjo? 8kyu
 # Create a function which answers the question "Are you playing banjo?".
 # If your name starts with the letter "R" or lower case "r", you are playing banjo!
+def are_you_playing_banjo(name)
+  if name[0].downcase == "r"
+    name + " plays banjo"
+  else
+    name + " does not play banjo"
+  end  
+end
