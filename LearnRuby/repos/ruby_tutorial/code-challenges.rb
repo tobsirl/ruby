@@ -95,3 +95,7 @@ def get_grade(s1, s2, s3)
   else 'F'
   end
 end
+
+# Are You Playing Banjo? 8kyu
+# Create a function which answers the question "Are you playing banjo?".
+# If your name starts with the letter "R" or lower case "r", you are playing banjo!
