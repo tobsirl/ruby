@@ -122,3 +122,11 @@ def arr(n = 0)
   num = n - 1
   (0..num).to_a  
 end
+
+def arr(n = 0)
+  (0...n).to_a
+end
+
+def arr(n = 0)
+  n.times.to_a
+end
