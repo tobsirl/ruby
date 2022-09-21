@@ -114,3 +114,11 @@ end
 def are_you_playing_banjo(name)
   name.start_with?("r","R") ? "#{name} plays banjo" : "#{name} does not play banjo"
  end
+
+# Filling an array (part 1) 8kyu
+# We want an array, but not just any old array, an array with contents!
+# Write a function that produces an array with the numbers 0 to N-1 in it.
+def arr(n = 0)
+  num = n - 1
+  (0..num).to_a  
+end
