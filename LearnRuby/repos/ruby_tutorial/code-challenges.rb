@@ -140,3 +140,7 @@ end
 # if x > y: 3 points
 # if x < y: 0 point
 # if x = y: 1 point
+def points(games)
+  games.map { |x| x[0] > x[2] ? 3 : x[0] == x[2] ? 1 : 0 }.sum
+end
+end
