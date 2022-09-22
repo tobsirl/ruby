@@ -141,6 +141,18 @@ end
 # if x < y: 0 point
 # if x = y: 1 point
 def points(games)
+  points = 0
+  games.each do |game|
+    if game[0] > game[2]
+      points += 3
+    elsif game[0] == game[2]
+      points += 1
+    end
+  end
+  points
+end
+
+def points(games)
   games.map { |x| x[0] > x[2] ? 3 : x[0] == x[2] ? 1 : 0 }.sum
 end
 end
